@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HUZZAH32 & Web Serial</title>
+
+    <!--load JS file-->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="controls">
+        <!-- button to select and open the serial port -->
+        <button id="connectBtn">Connect to HUZZAH32</button>
+
+        <!-- a form to select a led and define a color to display -->
+        <div id="colorForm">
+            <label for="ledAdress">select a led</label>
+            <input 
+                    type="number" 
+                    id="ledAdress" 
+                    name="ledAdress" 
+                    min="0" 
+                    max="12" 
+            />
+            <label for="ledColor">select a color</label>
+            <input 
+                    type="color" 
+                    id="ledColor" 
+                    name="ledColor"
+            />
+            <button id="sendBtn" disabled>Send color</button>
+        </div>
+    </div>  
+</body>
+</html>
