@@ -13,7 +13,7 @@
 // we load the library
 #include <Adafruit_NeoPixel.h>
 // then we create the ring object, from the Adafruit_NeoPixel class
-Adafruit_NeoPixel ring(12, 21, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel ring(11, 21, NEO_GRB + NEO_KHZ800);
 
 void setup() {
   // INITIALIZE NeoPixel ring object

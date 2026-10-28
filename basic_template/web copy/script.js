@@ -16,7 +16,7 @@ connectBtn.addEventListener('click', async function(){
         // when connected, we can disable connect button and interact with send button
         connectBtn.disabled = true;
         sendBtn.disabled = false;
-        output.innerHTML += "Connected to port!\n";
+        output.innerHTML += "<li>Connected to port!\n</li>";
 
         // Read incoming data from the HUZZAH32
         while (port.readable) {
@@ -51,7 +51,7 @@ connectBtn.addEventListener('click', async function(){
 // we listent to the button and then try to send some data
 sendBtn.addEventListener('click', async () => {
     if (!writer)return;
-    
+
     // we build our message 
     let message=`hello there\n`;
 
